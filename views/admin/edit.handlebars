@@ -1,0 +1,32 @@
+<form action="/admin/edit/{{dataEdit._id}}" enctype="multipart/form-data" method="POST">
+	<div class="form-group" enctype="multipart/form-data">
+		<label for="title">Title</label>
+		<input type="text" class="form-control" id="title" value="{{dataEdit.title}}" name="title">
+	</div>
+	<div class="form-group">
+		<label for="service">Service</label>
+		<input type="text" class="form-control" id="service" value="{{dataEdit.service}}" name="service">
+	</div>
+	<div class="form-group">
+		<label for="client">Client</label>
+		<input type="text" class="form-control" id="client" value="{{dataEdit.client}}" name="client">
+	</div>
+	<div class="form-group">
+		<label for="url">Project URL</label>
+		<input type="text" class="form-control" id="url" value="{{dataEdit.url}}" name="url">
+	</div>
+	<div class="form-group">
+		<label for="descript">Description</label>
+		<textarea name="descript" id="descript" cols="30" rows="10" >{{dataEdit.descript}}</textarea>
+	</div>
+	<div class="form-group">
+		<label for="projectdate">Priject Date</label>
+		<input type="date" class="form-control" id="projectdate" name="projectdate" value="{{dataEdit.projectdate}}">
+	</div>
+	<div class="form-group">
+		<label for="projectimg">Image</label>
+		<img src="/uploads/{{dataEdit.image}}" alt="">
+		<input type="file" class="form-control" id="projectimg" placeholder="Enter Img" name="projectimg">
+	</div>
+	<button type="submit" class="btn btn-default">Save</button>
+</form>

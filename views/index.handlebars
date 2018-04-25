@@ -1,0 +1,20 @@
+{{#if data}}
+	{{#each data}}
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<div class="thumbnail">
+				<img src="/uploads/{{image}}" alt="">
+				<div class="caption">
+					<h3>{{title}}</h3>
+					<p>
+						{{descript}}
+					</p>
+					<p>
+						<a href="/detail/{{_id}}" class="btn btn-primary">Detail</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	{{/each}}
+{{else}}
+	<p>No project</p>
+{{/if}}
